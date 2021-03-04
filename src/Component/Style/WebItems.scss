@@ -1,0 +1,81 @@
+@import "../Global.scss";
+
+.webSeries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+
+  .secWebItems {
+    .webItems {
+      img {
+        width: 100%;
+        height: 450px;
+        margin: 0 10px;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.webBanner {
+  background-image: url("../webBanner.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  position: relative;
+
+  .webBanHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $nav-theme-alpha;
+
+    h1 {
+      font-size: $max-header-font * 1.3;
+      color: #fff;
+    }
+
+    .breadCrumb {
+      color: #fff;
+      font-size: $min-header-font;
+
+      .link {
+        font-size: $min-header-font;
+        color: $font-color;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 2px solid $font-color;
+        }
+      }
+
+      .text {
+        font-size: $min-header-font;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.webGenres {
+  padding-top: 50px;
+}
+
+.seriesHead {
+  padding: 100px 0 30px 10px;
+  h1 {
+    font-size: $max-header-font;
+    color: #fff;
+  }
+}

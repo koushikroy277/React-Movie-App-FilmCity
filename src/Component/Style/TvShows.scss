@@ -1,0 +1,51 @@
+@import "../Global.scss";
+
+.tvShows {
+  .bannerShows {
+    background-image: url("../riverdaleHd.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 65vh;
+    position: relative;
+
+    .banShowMain {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $nav-theme-alpha;
+
+      h1 {
+        font-size: 6rem;
+        color: #fff;
+      }
+
+      .breadCrumb {
+        font-size: $min-header-font;
+        color: #fff;
+
+        .link {
+          font-size: $min-header-font;
+          color: $font-color;
+          text-decoration: none;
+
+          &:hover {
+            border-bottom: 2px solid $font-color;
+          }
+        }
+
+        .text {
+          font-size: $min-header-font;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

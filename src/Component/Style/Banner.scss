@@ -1,0 +1,78 @@
+@import "../Global.scss";
+
+.bannerMain {
+  .bannerSlide {
+    height: 90vh;
+    position: relative;
+    padding-top: 70px;
+    color: #fff;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .modalTrailer {
+      position: absolute;
+      top: 100px;
+
+      .modalYt {
+        button {
+          border: none;
+          outline: none;
+          background-color: $movie-title-color;
+          color: #fff;
+          padding: 5px 18px;
+          position: absolute;
+          left: 200px;
+        }
+
+        .ytVideo {
+          position: absolute;
+          left: 200px;
+          top: 32px;
+        }
+      }
+    }
+
+    .bannerCapt {
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-evenly;
+      text-align: left;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding-left: 50px;
+
+      h1 {
+        font-size: 5rem;
+        font-weight: 800;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .bannerBtn {
+        width: 150px;
+        height: 60px;
+        font-size: $min-header-font;
+        background-color: $font-color;
+        border: none;
+        color: #fff;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background: none;
+          border: 2px solid $font-color;
+        }
+      }
+    }
+  }
+}

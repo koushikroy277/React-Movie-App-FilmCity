@@ -1,0 +1,70 @@
+@import "../Global.scss";
+
+@mixin replace-bg($bg-img){
+  background-image: url($bg-img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+  position: relative;
+
+  .banShowMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $nav-theme-alpha;
+    color: #fff;
+
+    h1 {
+      font-size: 6rem;
+      padding-top: 100px;
+    }
+
+    .breadCrumb {
+      font-size: $min-header-font;
+      color: #fff;
+
+      .link {
+        font-size: $min-header-font;
+        color: $font-color;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 2px solid $font-color;
+        }
+      }
+
+      .text {
+        font-size: $min-header-font;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.romMovies {
+  @include replace-bg("../romantic.jpg");
+}
+
+.comedyMovies{
+  @include replace-bg("../comedy.jpg");
+}
+
+.docMovies{
+  @include replace-bg("../document.png");
+}
+
+.actionMovies{
+  @include replace-bg("../action.jpg");
+}
+
+.horrorMovies{
+  @include replace-bg("../horror.jpg");
+}
