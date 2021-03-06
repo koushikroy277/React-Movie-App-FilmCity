@@ -24,13 +24,18 @@
           color: #fff;
           padding: 5px 18px;
           position: absolute;
-          left: 200px;
+          left: 10px;
         }
 
         .ytVideo {
           position: absolute;
-          left: 200px;
+          left: 0;
           top: 32px;
+
+          .youtube {
+            width: 95vw;
+            margin: 0 10px;
+          }
         }
       }
     }
@@ -71,6 +76,20 @@
         &:hover {
           background: none;
           border: 2px solid $font-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:750px) {
+  .bannerMain{
+    .bannerSlide{
+      .bannerCapt {
+        padding-left: 5px;
+        
+        h1 {
+          font-size: 3rem;
         }
       }
     }

@@ -96,18 +96,18 @@ export default function ModalDes(props) {
               Play Trailer
             </button>
           </div>
-          <div className="modalTrailer">
-            {trailerUrl && (
+          {trailerUrl && (
+            <div className="modalTrailer">
               <div className="modalYt">
                 <button onClick={() => setTrailerUrl("")}>
                   <FaTimes size={18} />
                 </button>
                 <div className="ytVideo">
-                  <YouTube videoId={trailerUrl} opts={opts} onReady={onReady} />
+                  <YouTube videoId={trailerUrl} opts={opts} onReady={onReady} className="youtube"/>
                 </div>
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </>
     );

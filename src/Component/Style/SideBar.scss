@@ -7,27 +7,56 @@
   position: relative;
 
   .sideBar {
+    .sideBarLogo{
+      display: flex;
+      justify-content: space-evenly;
+      color: #fff;
+      margin-top: 10px;
+    }
     .sideBarItem {
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+      padding: 10px;
       .link {
         text-decoration: none;
         color: #fff;
+        padding: 10px 0;
         font-size: $mid-header-font * 0.65;
       }
-
-      .drop.link{
-        
+      cursor: pointer;
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        border-left: 2px solid $movie-title-color;
       }
 
-      .show.link{
-          margin-top: -160px;
+      .drop.link {
+        i {
+          position: absolute;
+          right: 10px;
+        }
+      }
+
+      .show.link {
+        margin-top: -240px;
+        i {
+          position: absolute;
+          right: 10px;
+        }
       }
 
       .sideDrop {
         height: 0;
         opacity: 0;
-        margin-top: 30px;
+        margin-top: 50px;
         margin-left: -25px;
-        transition: opacity .1s ease;
+        transition: opacity 0.1s ease;
+
+        .dropItem {
+          padding: 10px 0;
+
+          &:hover .link{
+            border-bottom: 2px solid $movie-title-color;
+          }
+        }
       }
 
       .sideDrop.show {
@@ -38,8 +67,8 @@
   }
 }
 
-.parentSideBar{
-    .sideBtn{
-        color: #fff;
-    }
+.parentSideBar {
+  .sideBtn {
+    color: #fff;
+  }
 }

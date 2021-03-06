@@ -15,10 +15,15 @@
 
     .navLogo {
       color: $font-color;
-      margin-left: 50px;
+      padding-left: 50px;
       font-size: $mid-header-font ;
       font-weight: 700;
-      letter-spacing: 3px;
+      display: flex;
+      color: #fff;
+
+      h1{
+        margin: 0 15px;
+      }
     }
 
     .sideBar{

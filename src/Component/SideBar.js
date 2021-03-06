@@ -12,7 +12,7 @@ import {
 } from "@material-ui/core";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
-import { FaAngleRight, FaAngleDown, FaBars } from 'react-icons/fa';
+import { FaAngleRight, FaAngleDown, FaBars, FaAtlassian } from 'react-icons/fa';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -36,6 +36,10 @@ export default function TemporaryDrawer() {
       className="sideBanner"
     >
       <List className="sideBar">
+        <div className="sideBarLogo">
+          <i><FaAtlassian size={40}/></i>
+          <h1>FilmCity</h1>
+        </div>
         <ListItem className="sideBarItem">
           <NavLink className="link" to="/">
             Home
@@ -43,7 +47,7 @@ export default function TemporaryDrawer() {
         </ListItem>
         <ListItem className="sideBarItem" onClick={() => setActive(!active)}>
           <NavLink className={active ? "show link": "drop link"} to="#">
-            Movies <i>{active ? <FaAngleDown size={20} />: <FaAngleRight />}</i>
+            Movies <i>{active ? <FaAngleDown size={25} />: <FaAngleRight size={25}/>}</i>
           </NavLink>
           <div className={active ? "sideDrop show" : "sideDrop"}>
             <div className="dropItem">

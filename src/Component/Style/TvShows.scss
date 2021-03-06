@@ -49,3 +49,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .tvShows {
+    .bannerShows {
+      .banShowMain {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}

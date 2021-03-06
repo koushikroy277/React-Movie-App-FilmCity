@@ -95,7 +95,7 @@ export default function ModalShows(props) {
                 <FaTimes size={18} />
               </button>
               <div className="ytVideo">
-                <YouTube videoId={trailerUrl} opts={opts} onReady={onReady} />
+                <YouTube videoId={trailerUrl} opts={opts} onReady={onReady} className="youtube"/>
               </div>
             </div>
           )}

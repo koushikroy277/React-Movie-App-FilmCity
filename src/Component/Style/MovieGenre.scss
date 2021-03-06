@@ -68,3 +68,13 @@
 .horrorMovies{
   @include replace-bg("../horror.jpg");
 }
+
+@media only screen and (max-width: 750px){
+  .romMovies, .comedyMovies, .docMovies, .actionMovies, .horrorMovies{
+    .banShowMain{
+      h1{
+        font-size: 4rem;
+      }
+    }
+  }
+}
