@@ -10,26 +10,25 @@
   color: #fff;
   padding-top: 70px;
 
-  .backLink{
+  .backLink {
     position: absolute;
     right: -50px;
     top: 100px;
     width: 100px;
 
-    .link{
+    .link {
       text-align: center;
       text-decoration: none;
       color: $movie-title-color;
       border: 2px solid $movie-title-color;
       border-radius: 5px;
       padding: 10px;
-      transition: .2s;
+      transition: 0.2s;
 
-      &:hover{
+      &:hover {
         color: #fff;
         background-color: $movie-title-color;
       }
-
     }
   }
 
@@ -51,22 +50,22 @@
     justify-content: center;
     margin: 0 50px 0 20px;
 
-    .modalCast p{
+    .modalCast p {
       display: inline-block;
       margin-left: 10px;
 
-      &:first-child{
+      &:first-child {
         font-size: 16px;
         font-weight: 700;
         color: $movie-title-color;
       }
     }
 
-    .modalGenres p{
+    .modalGenres p {
       display: inline-block;
       margin-left: 10px;
 
-      &:first-child{
+      &:first-child {
         font-size: 16px;
         font-weight: 700;
         color: $movie-title-color;
@@ -84,6 +83,7 @@
       margin: 0 10px;
       width: 200px;
       height: 50px;
+      margin-bottom: 100px;
       transition: 0.3s;
 
       &:hover {
@@ -96,7 +96,7 @@
   .modalTrailer {
     position: absolute;
 
-    .modalYt{
+    .modalYt {
       button {
         border: none;
         outline: none;
@@ -132,39 +132,38 @@
   }
 }
 
-@media only screen and ( max-width: 700px){
-  .movieModal{
+@media only screen and (max-width: 700px) {
+  .movieModal {
     flex-direction: column;
 
-    img{
+    img {
       width: 100vw;
     }
 
-    .modalList{
+    .modalList {
       margin-top: 50px;
     }
 
-    .backLink{
-      .link{
+    .backLink {
+      .link {
         background-color: $movie-title-color;
         color: #fff;
-  
       }
     }
 
     .modalTrailer {
-      .modalYt{
+      .modalYt {
         button {
           left: 10px;
           top: 470px;
         }
-  
+
         .ytVideo {
           position: absolute;
           left: 10px;
           top: 502px;
 
-          .youtube{
+          .youtube {
             width: 95vw;
           }
         }

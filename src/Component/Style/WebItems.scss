@@ -79,3 +79,12 @@
     color: #fff;
   }
 }
+
+@media only screen and (max-width: 600px){
+  .webBanner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+}

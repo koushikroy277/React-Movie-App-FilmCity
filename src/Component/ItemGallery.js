@@ -2,12 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Style/ItemGallery.scss";
 import axios from "axios";
-import ModalDes from "./ModalDes";
 
 export default function ItemGallery(props) {
   const ImgUrl = "https://image.tmdb.org/t/p/original/";
   const [movies, setMovies] = React.useState([]);
-  const [enter, setEnter] = React.useState(false);
 
   const fetchMovieApi = async () => {
     const request = await axios.get(props.movieApi);
@@ -28,8 +26,6 @@ export default function ItemGallery(props) {
               <div
                 key={index}
                 className="galleryFull"
-                onMouseEnter={() => setEnter(true)}
-                onMouseLeave={() => setEnter(false)}
               >
                 <NavLink
                   to={{
