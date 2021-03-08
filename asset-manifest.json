@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-Movie-App-FilmCity/static/css/main.1bd9838d.chunk.css",
-    "main.js": "/React-Movie-App-FilmCity/static/js/main.54112ec5.chunk.js",
-    "main.js.map": "/React-Movie-App-FilmCity/static/js/main.54112ec5.chunk.js.map",
+    "main.css": "/React-Movie-App-FilmCity/static/css/main.be087cc3.chunk.css",
+    "main.js": "/React-Movie-App-FilmCity/static/js/main.bdecaef5.chunk.js",
+    "main.js.map": "/React-Movie-App-FilmCity/static/js/main.bdecaef5.chunk.js.map",
     "runtime-main.js": "/React-Movie-App-FilmCity/static/js/runtime-main.999e999c.js",
     "runtime-main.js.map": "/React-Movie-App-FilmCity/static/js/runtime-main.999e999c.js.map",
     "static/css/2.ec02d681.chunk.css": "/React-Movie-App-FilmCity/static/css/2.ec02d681.chunk.css",
@@ -14,7 +14,7 @@
     "service-worker.js": "/React-Movie-App-FilmCity/service-worker.js",
     "service-worker.js.map": "/React-Movie-App-FilmCity/service-worker.js.map",
     "static/css/2.ec02d681.chunk.css.map": "/React-Movie-App-FilmCity/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.1bd9838d.chunk.css.map": "/React-Movie-App-FilmCity/static/css/main.1bd9838d.chunk.css.map",
+    "static/css/main.be087cc3.chunk.css.map": "/React-Movie-App-FilmCity/static/css/main.be087cc3.chunk.css.map",
     "static/js/2.96ca5700.chunk.js.LICENSE.txt": "/React-Movie-App-FilmCity/static/js/2.96ca5700.chunk.js.LICENSE.txt",
     "static/media/MovieGenre.scss": "/React-Movie-App-FilmCity/static/media/romantic.20cd9449.jpg",
     "static/media/TvShows.scss": "/React-Movie-App-FilmCity/static/media/riverdaleHd.41c536a6.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.999e999c.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.96ca5700.chunk.js",
-    "static/css/main.1bd9838d.chunk.css",
-    "static/js/main.54112ec5.chunk.js"
+    "static/css/main.be087cc3.chunk.css",
+    "static/js/main.bdecaef5.chunk.js"
   ]
 }
