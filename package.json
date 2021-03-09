@@ -42,9 +42,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "yarn start",
-    "build": "yarn run build",
+    "build": "yarn build",
     "test": "yarn test",
-    "eject": "yarn run eject"
+    "eject": "yarn eject"
   },
   "eslintConfig": {
     "extends": [
